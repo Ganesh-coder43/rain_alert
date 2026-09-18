@@ -1,7 +1,7 @@
 import requests
 import os
 from smtplib import SMTP
-API_KEY = os.environ.get("OPENWEATHER_API_KEY")
+OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY")
 MY_EMAIL = os.environ.get("MY_EMAIL")  
 APP_PASSWORD = os.environ.get("APP_PASSWORD")
 TO_EMAIL = os.environ.get("TO_EMAIL")
@@ -11,7 +11,7 @@ MY_LONG = 82.06943564250437
 weather_params = {
     'lat': 17.09281440497354,
     'lon': 82.06943564250437,
-    'appid':api_key,
+    'appid':OPENWEATHER_API_KEY,
     'cnt':4
 }
 response = requests.get("https://api.openweathermap.org/data/2.5/forecast?",params=weather_params)
