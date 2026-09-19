@@ -2,8 +2,8 @@ name: Daily Rain Alert
 
 on:
   schedule:
-    # 4:00 AM IST = 10:30 PM UTC (previous day)
-    - cron: "21 8  * * *"
+    
+    - cron: "30 8  * * *"
 
   workflow_dispatch:
 
